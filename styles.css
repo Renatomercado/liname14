@@ -1,0 +1,495 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #cce6ff, #99ccff);
+    color: #333;
+    padding: 20px;
+}
+
+header.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.header-container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #004080;
+}
+
+select {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #004080;
+}
+
+.group-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.group-box {
+    background-color: #ffffffd9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #cccccc;
+    width: 300px;
+    text-align: center;
+}
+
+.group-box h3 {
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+.group-box ul {
+    list-style: none;
+}
+
+.group-box li {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group-box li i {
+    font-size: 20px;
+    color: #004080;
+    transition: color 0.3s ease;
+}
+
+.group-box li i:hover {
+    color: #ff4081;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(to right, #ff4081, #ff80ab);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer-brand {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffeb3b;
+    text-decoration: underline;
+}
+
+/* Estilo para centrar el afiche */
+.afiche-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.afiche-image {
+    display: block;
+    margin: 0 auto;
+    width: 25%;    /* O usa 300px si prefieres un tamaño fijo */
+    height: auto;
+}
+
+/* Estilo para los nombres de los grupos */
+.group-box h3 {
+    color: #ff4081; /* Color brillante para los títulos */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Hace que las letras estén en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre las letras */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra de texto suave */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.group-box h3:hover {
+    color: #ff80ab; /* Cambia el color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandar ligeramente al pasar el ratón */
+}
+
+/* Ajustes para los elementos de la lista */
+.group-box li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Color base de los nombres de los equipos */
+    margin: 10px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.group-box li:hover {
+    color: #ff4081; /* Cambia el color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandar ligeramente */
+}
+
+/* Estilo para los equipos dentro de las celdas */
+.group-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.group-box li {
+    background-color: #ffffff; /* Fondo blanco para cada celda */
+    padding: 15px;
+    margin-bottom: 10px; /* Espacio entre las celdas */
+    border: 2px solid #004080; /* Borde azul para cada celda */
+    border-radius: 8px; /* Bordes redondeados */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease;
+}
+
+.group-box li:hover {
+    transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+}
+
+.group-box li span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Color de los nombres de los equipos */
+    flex: 1;
+    text-align: center;
+}
+
+.group-box li a img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.group-box li a img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del ícono cuando se pasa el ratón */
+}
+
+/* General Styles */
+body {
+    background: linear-gradient(to right, #1ce8f7, #03a5aa);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #1ce8f7;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+}
+
+/* Table Styles */
+table {
+    width: 60%; /* Menor ancho */
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    font-weight: bold; /* Letras más destacadas */
+}
+
+th {
+    background-color: #03a5aa;
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase; /* Letras en mayúsculas para los encabezados */
+}
+
+td {
+    background-color: #f4f4f4;
+    color: #333; /* Color de letra más oscuro para mejor contraste */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e1e1e1;
+}
+
+tbody tr:hover {
+    background-color: #d1d1d1;
+}
+
+/* Group Section Styling */
+.group-table td {
+    font-size: 1.1rem; /* Un poco más grande el texto */
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.group-table td a {
+    color: #ff6347; /* Color llamativo para los equipos */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.group-table td a:hover {
+    color: #d44e33; /* Color más oscuro al hacer hover */
+}
+
+/* Button for "Regresar" */
+.live-stream {
+    margin: 20px 0;
+}
+
+.live-stream button {
+    background-color: #f4a261;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.live-stream button:hover {
+    background-color: #e76f51;
+}
+
+/* Buffet Card */
+.buffet-card {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.buffet-card h3 {
+    color: #d35400;
+}
+
+.buffet-card p {
+    font-size: 18px;
+}
+
+/* Partidos Section */
+.partidos-container {
+    margin: 20px 0;
+}
+
+.partidos-container table {
+    width: 80%; /* Ajuste el tamaño */
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.partidos-container th,
+.partidos-container td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.partidos-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.partidos-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+.live-button {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.live-button:hover {
+    background-color: #e53e1a;
+}
+
+/* Mapa Section */
+.mapa-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 300px; /* Reduje la altura */
+    max-width: 600px; /* Limité el ancho para hacerlo más pequeño */
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Page specific styles (LINAME SUB 14) */
+.index-container {
+    text-align: center;
+    margin: 30px auto;
+    color: #fff;
+}
+
+/* Partidos Table */
+.partidos-container table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.partidos-container th,
+.partidos-container td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.partidos-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.partidos-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+.live-button {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.live-button:hover {
+    background-color: #e53e1a;
+}
+
+/* Group Section */
+.group-table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.group-table td {
+    font-size: 1.2rem; /* Aumenté un poco más el tamaño */
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.group-table td a {
+    color: #ff6347; /* Color llamativo para los equipos */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.group-table td a:hover {
+    color: #d44e33;
+}
+
+/* Adjustments for mobile */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+
+    .partidos-container table {
+        width: 100%;
+    }
+
+    .group-table td {
+        font-size: 1rem;
+    }
+
+    .buffet-card {
+        width: 90%;
+    }
+
+    .header-container {
+        padding: 15px;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}
+
