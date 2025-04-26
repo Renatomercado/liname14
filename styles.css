@@ -137,7 +137,7 @@ select {
 .afiche-image {
     display: block;
     margin: 0 auto;
-    width: 25%;    /* O usa 300px si prefieres un tamaño fijo */
+    width: 40%;    /* O usa 300px si prefieres un tamaño fijo */
     height: auto;
 }
 
