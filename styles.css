@@ -492,4 +492,31 @@ iframe {
         font-size: 0.8rem;
     }
 }
-
+.buffet-video-container {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f7faff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .buffet-title {
+    font-size: 1.6em;
+    color: #1d3557;
+    margin-bottom: 10px;
+  }
+  
+  .buffet-desc {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .buffet-video {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    border-radius: 10px;
+  }
