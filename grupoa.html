@@ -83,12 +83,12 @@
         <script>
             // Datos iniciales de los equipos
             let equipos = [
-                { nombre: "Pumas Copiapó", pts: 0, pj: 0, pg: 0, pp: 0 },
-                { nombre: "Instituto Linares", pts: 0, pj: 0, pg: 0, pp: 0 },
-                { nombre: "Planeta Volei", pts: 0, pj: 0, pg: 0, pp: 0 },
-                { nombre: "Universidad de Concepción", pts: 0, pj: 0, pg: 0, pp: 0 },
-                { nombre: "AVI", pts: 0, pj: 0, pg: 0, pp: 0 },
-                { nombre: "Trekan", pts: 0, pj: 0, pg: 0, pp: 0 },
+                { nombre: "Pumas Copiapó", pts: 8, pj: 5, pg: 4, pp: 1 },
+                { nombre: "Instituto Linares", pts: 4, pj: 5, pg: 2, pp: 3 },
+                { nombre: "Planeta Volei", pts: 8, pj: 5, pg: 4, pp: 1 },
+                { nombre: "Universidad de Concepción", pts: 4, pj: 5, pg: 2, pp: 3 },
+                { nombre: "AVI", pts: 6, pj: 5, pg: 3, pp: 2 },
+                { nombre: "Trekan", pts: 2, pj: 5, pg: 1, pp: 4 },
             ];
         
             function actualizarTabla() {
@@ -126,12 +126,12 @@
                     <tr><th>Hora</th><th>Partido</th><th>Ganador</th><th>En Vivo</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>15:00</td><td>Pumas Copiapó vs Trekan</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>16:00</td><td>AVI vs Instituto Linares</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>17:00</td><td>Universidad de Concepción vs Planeta Volei</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>18:00</td><td>Pumas Copiapó vs Instituto Linares</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>19:00</td><td>Trekan vs Planeta Volei</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>20:00</td><td>AVI vs Universidad de Concepción</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>15:00</td><td>Pumas Copiapó vs Trekan</td><td>Pumas Copiapo</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>16:00</td><td>AVI vs Instituto Linares</td><td>AVI</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>17:00</td><td>Universidad de Concepción vs Planeta Volei</td><td>Universidad de Concepción</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>18:00</td><td>Pumas Copiapó vs Instituto Linares</td><td>Pumas Copiapo</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>19:00</td><td>Trekan vs Planeta Volei</td><td>Planeta Volei</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>20:00</td><td>AVI vs Universidad de Concepción</td>AVI<td></td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
                 </tbody>
             </table>
         </div>
@@ -146,15 +146,15 @@
                     <tr><th>Hora</th><th>Partido</th><th>Ganador</th><th>En Vivo</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>10:00</td><td>Pumas Copiapó vs Planeta Volei</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>10:00</td><td>Pumas Copiapó vs Planeta Volei</td><td>Planeta Volei</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
                     <tr><td>11:00</td><td>Instituto Linares vs Universidad de Concepción</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>12:00</td><td>Trekan vs AVI</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>13:00</td><td>Planeta Volei vs Instituto Linares</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>14:00</td><td>Pumas Copiapó vs AVI</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>15:00</td><td>Universidad de Concepción vs Trekan</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>16:00</td><td>Planeta Volei vs AVI</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>17:00</td><td>Pumas Copiapó vs Universidad de Concepción</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
-                    <tr><td>18:00</td><td>Instituto Linares vs Trekan</td><td>---</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>12:00</td><td>Trekan vs AVI</td><td>AVI</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>13:00</td><td>Planeta Volei vs Instituto Linares</td><td>Planeta Volei</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>14:00</td><td>Pumas Copiapó vs AVI</td><td>Pumas</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>15:00</td><td>Universidad de Concepción vs Trekan</td><td>Trekan</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>16:00</td><td>Planeta Volei vs AVI</td><td>Planeta Volei</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>17:00</td><td>Pumas Copiapó vs Universidad de Concepción</td><td>Pumas</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
+                    <tr><td>18:00</td><td>Instituto Linares vs Trekan</td><td>Instituto Linares</td><td><a href="https://youtube.com" target="_blank"></a></td></tr>
                 </tbody>
             </table>
         </div>
